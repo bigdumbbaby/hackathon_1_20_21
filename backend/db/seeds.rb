@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Customer.create([
+    {name: "Bob", age: "25", moving_date: "January"},
+    {name: "Frank", age: "50", moving_date: "Febuary"},
+    {name: "John", age: "65", moving_date: "March"},
+])
+
+Furnature.create([
+    {name: "Table"},
+    {name: "Chair"},
+    {name: "Bed"},
+])
