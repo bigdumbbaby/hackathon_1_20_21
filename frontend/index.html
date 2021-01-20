@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <script defer src="app.js"></script>
+  <title>Mover App</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Move</h1>
+    <p>Making Moving Easier</p>
+  </div>
+  <div class="navbar">
+    <a href="http://localhost:3001/" class="active">Home</a>
+    <a href="http://localhost:3001/showFurnature.html" class="active">Storage</a>
+  </div>
+
+  <h1>Welcome to the Moving app</h1>
+</br>
+  <h1>Check Customers!</h1>
+  <ul id="customer-list"></ul>
+  <h1>Add a Customer!</h1>
+  <form action="http://localhost:3000/customers" method="POST">
+    <label for="name-field">Customer Name</label>
+    <input id="name-field" type="text" placeholder="enter name" name="name">
+    <label for="age-field">Customer age</label>
+    <input id="age-field" type="text" placeholder="enter age" name="age">
+    <label for="move-date-dropdown">Moving Month</label>
+    <select id="move_date-dropdown" name="moving_date">
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select>
+    <input type="submit">
+    </form>
+    <h1>Add Furniture!</h1>
+    <form action="http://localhost:3000/furnatures" method="POST">
+      <label for="type-field">Furniture Type</label>
+      <input id="type-field" type="text" placeholder="enter type" name="type">
+      <label for="size-field">Size</label>
+      <select id="size-field" name="size">
+        <option value="small">Small</option>
+        <option value="sedium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+      <label for="customer-dropdown">Owner</label>
+      <select id="customer-dropdown" name="customer_id">
+
+      </select> 
+      <input type="submit">
+    </form>
+  
+</body>
+</html>
